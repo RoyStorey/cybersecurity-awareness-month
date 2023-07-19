@@ -1,0 +1,130 @@
+$text-color: #000000cc;
+$border-color: #00000044;
+
+@font-face {
+  font-family: BigShoulders;
+  src: url(../static/BigShouldersText-Regular.ttf);
+}
+
+body {
+  background-color: #ffffff;
+  color: $text-color;
+  font-family: BigShoulders;
+}
+
+.page-container {
+  width: 100%;
+  padding: 0vw 0vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.content-container {
+  width: 50rem;
+  margin-top: 4vw;
+  // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
+  background-color: white;
+}
+
+.hero {
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px $border-color solid;
+  border-bottom: none;
+  gap: 1.2vh;
+  h1 {
+    font-size: 5vh;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+}
+
+.header {
+  // height: 10%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px $border-color solid;
+  border-bottom: none;
+
+  h5 {
+    margin: 0px;
+  }
+
+  button {
+    background-color: transparent;
+    color: $text-color;
+    border: none;
+    padding: 0.25rem 1rem;
+  }
+
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+  }
+}
+
+.body-container {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: $border-color 1px solid;
+  font-size: 1.1rem;
+  font-weight: 500;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.description {
+  text-indent: 1rem;
+  margin: 0px;
+  word-spacing: 1px;
+}
+
+.submission {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-bottom: 1px solid $border-color;
+
+  iframe {
+    display: flex;
+    align-self: center;
+  }
+}
+
+.upload-demo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  input {
+    // border: 1px dashed $border-color;
+    padding: 0.5rem;
+  }
+  textarea {
+    height: 20vh;
+    // border: 1px dashed $border-color;
+    padding: 0.5rem;
+  }
+  button {
+    // width: 15%;
+    background: transparent;
+    border: none;
+    color: $text-color;
+    // text-align: left;
+    padding: 0.5rem;
+  }
+
+  button:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+  }
+}
