@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import "../css/styles.css";
 import themePhoto from "../media/theme.png";
 import Banner from "../components/Banner";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
