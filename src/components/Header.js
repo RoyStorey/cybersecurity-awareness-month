@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header() {
   return (
     <div class="header">
@@ -5,18 +7,18 @@ function Header() {
         <h5>Hosted by 89CS MDT</h5>
       </div>
       <div>
-        <a href="/">
+        <Link to="/">
           <button>Home</button>
-        </a>
-        <a href="/themes">
+        </Link>
+        <Link to="/themes">
           <button>Theme Rules</button>
-        </a>
-        <a href="/demos">
+        </Link>
+        <Link to="/demos">
           <button>Demos</button>
-        </a>
-        <a href="/upload-demo">
+        </Link>
+        <Link to="/upload-demo">
           <button>Upload Demo</button>
-        </a>
+        </Link>
       </div>
     </div>
   );

@@ -47,7 +47,7 @@ function Home() {
               With great power comes great responsibility. In demonstrating your
               cyber capabilities, it's important to remember to practice good
               ethics. The <b>rules of engagement</b> for this theme are located
-              in the "<a href="/themes">Theme Rules</a>" page.
+              in the "<Link to="/themes">Theme Rules</Link>" page.
             </p>
             <p class="description">
               The submitted demos will be posted in the Demos tab. You will also
