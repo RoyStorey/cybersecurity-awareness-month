@@ -1,8 +1,9 @@
 import Header from "../components/Header";
 import "../css/styles.css";
-import themePhoto from "../media/theme.png";
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGlassCheers } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
             </p>
             <p className="description">
               This event is open for anyone to post demonstrations and
-              participate, it is not limited to any particular shop. This
+              participate, it is not limited to any particular unit. This
               website is structured to be a board where participants can upload
               their cyber demonstrations with descriptions. At the end of
               October, the member with the most impressive cybersecurity
@@ -51,10 +52,27 @@ function Home() {
               in the "<Link to="/themes">Theme Rules</Link>" page.
             </p>
             <p class="description">
-              The submitted demos will be posted in the Demos tab. You will also
-              find the 'Submit Demo' button over there. The deadline for video
-              submissions is 10/01/2023.
+              All submitted demos will be posted in the "
+              <Link to="/demos">Demos</Link>" tab. The order of videos is newest
+              at the top and oldest at the bottom. The purpose of this is to let
+              the fresh new videos get some sunlight.
             </p>
+            <p class="description">
+              To submit a demo, click on the "
+              <Link to="/upload-demo">Upload Demo</Link>" button in the header.
+              All videos should be original content, all copyrighted content
+              will be disqualified from rankings and rewards. The ideal video
+              length is between 2-6 minutes, depending on the complexity of the
+              demonstration.
+            </p>
+            <p class="description">
+              Demos are to be submitted prior to October 15th, 2023 @ 23:59. The
+              reward ceremony will be held the following Friday, October 20th,
+              2023. Location TBD. Here's to Cybersecurity!
+            </p>
+            <br />
+            <br />
+            <FontAwesomeIcon icon={faGlassCheers} />
           </div>
         </div>
       </div>

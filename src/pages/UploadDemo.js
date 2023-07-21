@@ -38,16 +38,19 @@ function UploadDemo() {
                 name="creator_name"
                 id="upload_creator_name"
                 placeholder="Creator Name"
+                required
               ></input>
               <textarea
                 name="description"
                 id="upload_description"
                 placeholder="Description"
+                required
               ></textarea>
               <input
                 name="url"
                 id="upload_url"
                 placeholder="Youtube URL"
+                required
               ></input>
               <button type="submit">Submit</button>
             </form>

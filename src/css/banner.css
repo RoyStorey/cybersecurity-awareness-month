@@ -6,7 +6,7 @@
 .banner-container {
   outline: rgba(0, 0, 0, 0.13) 5px solid;
   border-radius: 1vh;
-  background: linear-gradient(60deg, rgb(116, 61, 61), rgb(50, 109, 148));
+  background: linear-gradient(60deg, rgb(115, 36, 36), rgb(50, 109, 148));
   width: 100%;
   aspect-ratio: 4/1;
   padding: 1vh;
@@ -220,7 +220,7 @@
     text-shadow: rgba(255, 255, 255, 0.6588235294) 2px 2px 10px;
   }
   70% {
-    text-shadow: none;
+    text-shadow: white 2px 2px 10px;
   }
   75% {
     text-shadow: rgba(255, 255, 255, 0.6431372549) 2px 2px 10px;

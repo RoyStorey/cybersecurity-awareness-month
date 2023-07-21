@@ -24,7 +24,7 @@ body {
   width: 50rem;
   margin-top: 4vw;
   // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
-  background-color: white;
+  // background-color: white;
 }
 
 .hero {
@@ -98,6 +98,7 @@ body {
   iframe {
     display: flex;
     align-self: center;
+    border: none;
   }
 }
 

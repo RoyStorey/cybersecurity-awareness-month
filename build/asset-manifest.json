@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a8f9b8a6.css",
+    "main.js": "/static/js/main.672efd68.js",
+    "static/media/Caveat-VariableFont_wght.ttf": "/static/media/Caveat-VariableFont_wght.834178e16d110b21c85e.ttf",
+    "static/media/BigShouldersText-Regular.ttf": "/static/media/BigShouldersText-Regular.a17db5e5102c489d1c65.ttf",
+    "index.html": "/index.html",
+    "main.a8f9b8a6.css.map": "/static/css/main.a8f9b8a6.css.map",
+    "main.672efd68.js.map": "/static/js/main.672efd68.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f9b8a6.css",
+    "static/js/main.672efd68.js"
+  ]
+}

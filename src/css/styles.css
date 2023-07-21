@@ -19,7 +19,6 @@ body {
 .content-container {
   width: 50rem;
   margin-top: 4vw;
-  background-color: white;
 }
 
 .hero {
@@ -88,6 +87,7 @@ body {
 .submission iframe {
   display: flex;
   align-self: center;
+  border: none;
 }
 
 .upload-demo-form {
