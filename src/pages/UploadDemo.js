@@ -18,6 +18,9 @@ function UploadDemo() {
       "https://youtube.com/embed/" +
       getEmbed(document.getElementById("upload_url").value);
     postDemo(creator_name, description, url);
+
+    alert("Demo submitted successfully..");
+    window.location.reload();
   };
 
   return (

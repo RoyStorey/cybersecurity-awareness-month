@@ -102,6 +102,12 @@ body {
   }
 }
 
+.submissions {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 4rem;
+}
+
 .upload-demo-form {
   display: flex;
   flex-direction: column;

@@ -18,7 +18,9 @@ function Demos() {
           </div>
           <Header />
           <div class="body-container">
-            <Submissions data={data} />
+            <div className="submissions">
+              <Submissions data={data} />
+            </div>
           </div>
         </div>
       </div>
