@@ -6,7 +6,7 @@
 .banner-container {
   outline: rgba(0, 0, 0, 0.13) 5px solid;
   border-radius: 1vh;
-  background: linear-gradient(60deg, rgb(115, 36, 36), rgb(50, 109, 148));
+  background: linear-gradient(120deg, hsl(0, 50%, 33%), hsl(32, 50%, 33%));
   width: 100%;
   aspect-ratio: 4/1;
   padding: 1vh;
@@ -17,11 +17,13 @@
   overflow: hidden;
   font-family: Caveat;
 }
+
 .banner-container .phone-container {
   aspect-ratio: 9/16;
   box-sizing: border-box;
   z-index: 3;
 }
+
 .banner-container .phone {
   outline: 0.05vh solid rgba(0, 0, 0, 0.959);
   border-radius: 0.5vh;
@@ -33,70 +35,78 @@
   z-index: 3;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.63);
 }
+
 .banner-container .top-camera-bit {
   height: 1.2vh;
-  padding: 0.25vh;
+  padding: 1%;
   display: flex;
   justify-content: right;
 }
+
 .banner-container .camera {
-  background: linear-gradient(
-    95deg,
-    rgb(85, 84, 84),
-    rgb(153, 153, 153),
-    rgb(68, 68, 68)
-  );
-  height: 1vh;
+  background: linear-gradient(95deg,
+      rgb(85, 84, 84),
+      rgb(153, 153, 153),
+      rgb(68, 68, 68));
   width: 15%;
-  border-radius: 1rem;
+  border-radius: 30%;
   margin-right: 1vh;
 }
+
 .banner-container .phone-screen {
   height: 100%;
-  border-radius: 0.8vh;
+  border-radius: 1%;
   box-sizing: border-box;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   outline: 0.05vh rgba(0, 0, 0, 0.212) solid;
 }
+
 .banner-container .top-menu {
   height: 82.5%;
-  padding: 1.5vh 1.2vh 1.5vh 1.2vh;
+  padding: 9% 15%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
 }
+
 .banner-container .top-menu .row {
   display: flex;
   justify-content: space-between;
 }
+
 .banner-container .top-menu .row:last-of-type .app-icon:nth-child(3) {
   background: none;
   outline: none;
 }
+
 .banner-container .top-menu .row:last-of-type .app-icon:nth-child(4) {
   background: none;
   outline: none;
 }
+
 .banner-container .bottom-menu {
   background-color: rgba(255, 255, 255, 0.55);
-  padding: 1.4vh;
+  padding: 9% 15%;
   box-sizing: border-box;
 }
+
 .banner-container .bottom-menu .row {
   display: flex;
   justify-content: space-between;
 }
+
 .banner-container .app-icon {
   background-color: rgb(255, 255, 255);
   outline: 0.05vh rgba(0, 0, 0, 0.212) solid;
   width: 20%;
   aspect-ratio: 1/1;
   z-index: 3;
-  border-radius: 0.5vh;
+  border-radius: 10%;
 }
+
 .banner-container .radio-wave-container {
   width: 100%;
   height: 100%;
@@ -104,6 +114,7 @@
   left: 0px;
   top: 0px;
 }
+
 .banner-container .waveOne {
   position: absolute;
   top: 1vh;
@@ -114,6 +125,7 @@
   display: flex;
   align-items: center;
 }
+
 .banner-container .waveOne .wavelet {
   width: 20%;
   height: 0%;
@@ -122,22 +134,27 @@
   background-color: rgb(255, 232, 104);
   animation-timing-function: linear;
 }
+
 .banner-container .waveOne .wavelet:nth-of-type(2) {
   animation-delay: 1s;
 }
+
 .banner-container .waveOne .wavelet:nth-of-type(3) {
   animation-delay: 2s;
 }
+
 @keyframes waveEffectOne {
   0% {
     left: 0%;
     height: 0%;
   }
+
   100% {
     left: 100%;
     height: 100%;
   }
 }
+
 .banner-container .waveTwo {
   position: absolute;
   bottom: 1vh;
@@ -148,6 +165,7 @@
   display: flex;
   align-items: center;
 }
+
 .banner-container .waveTwo .wavelet {
   width: 20%;
   height: 0%;
@@ -156,79 +174,94 @@
   background-color: rgb(255, 232, 104);
   animation-timing-function: linear;
 }
+
 .banner-container .waveTwo .wavelet:nth-of-type(2) {
   animation-delay: 1s;
 }
+
 .banner-container .waveTwo .wavelet:nth-of-type(3) {
   animation-delay: 2s;
 }
+
 @keyframes waveEffectTwo {
   0% {
     right: 0%;
     height: 0%;
   }
+
   100% {
     right: 100%;
     height: 100%;
   }
 }
+
 .banner-container .wavelet {
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.178);
   border-radius: 0.25vw;
 }
+
 .banner-container .one .phone-screen {
-  background: linear-gradient(15deg, rgb(212, 199, 123), cyan);
+  background: linear-gradient(15deg, rgb(212, 199, 123), rgb(233, 139, 32));
 }
+
 .banner-container .one .phone {
-  background: linear-gradient(
-    60deg,
-    rgb(122, 122, 122),
-    rgb(187, 187, 187),
-    gray
-  );
+  background: linear-gradient(60deg,
+      rgb(122, 122, 122),
+      rgb(187, 187, 187),
+      gray);
 }
+
 .banner-container .two .phone-screen {
   background: linear-gradient(15deg, rgb(17, 1, 0), rgb(163, 19, 0));
 }
+
 .banner-container .two .phone {
-  background: linear-gradient(
-    60deg,
-    rgb(80, 80, 80),
-    rgb(39, 39, 39),
-    rgb(78, 78, 78)
-  );
+  background: linear-gradient(60deg,
+      rgb(80, 80, 80),
+      rgb(39, 39, 39),
+      rgb(78, 78, 78));
 }
+
 .banner-container h1 {
   position: absolute;
   margin: 0px;
   font-size: 450%;
   transform: rotate(3deg);
-  color: rgb(255, 255, 255);
+  color: #fff;
   text-shadow: rgba(255, 255, 255, 0.6431372549) 2px 2px 10px;
   animation: flicker 6s infinite;
 }
+
 .banner-container h1:first-of-type {
-  top: 0vw;
-  right: 36%;
+  top: 10%;
+  left: 40%;
 }
+
 .banner-container h1:last-of-type {
-  bottom: 0vw;
-  left: 27%;
+  top: 40%;
+  left: 30%;
 }
+
 @keyframes flicker {
   74% {
     text-shadow: rgba(255, 255, 255, 0.6588235294) 2px 2px 10px;
   }
+
   70% {
     text-shadow: white 2px 2px 10px;
   }
+
   75% {
     text-shadow: rgba(255, 255, 255, 0.6431372549) 2px 2px 10px;
   }
+
   76% {
     text-shadow: none;
   }
+
   77% {
     text-shadow: #ffffff 2px 2px 10px;
   }
-} /*# sourceMappingURL=styles.css.map */
+}
+
+/*# sourceMappingURL=styles.css.map */

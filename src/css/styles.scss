@@ -2,14 +2,18 @@ $text-color: #000000cc;
 $border-color: #00000044;
 
 @font-face {
-  font-family: BigShoulders;
-  src: url(../static/BigShouldersText-Regular.ttf);
+  font-family: Nunito;
+  src: url(../static/Nunito-VariableFont_wght.ttf);
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff9f9;
   color: $text-color;
-  font-family: BigShoulders;
+  font-family: Nunito;
+}
+
+span {
+  padding-inline: .5rem;
 }
 
 .page-container {
@@ -21,10 +25,8 @@ body {
 }
 
 .content-container {
-  width: 50rem;
+  width: 60vw;
   margin-top: 4vw;
-  // box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.09);
-  // background-color: white;
 }
 
 .hero {
@@ -35,21 +37,32 @@ body {
   border: 1px $border-color solid;
   border-bottom: none;
   gap: 1.2vh;
+  padding: 4rem;
+  box-sizing: border-box;
+
+  overflow: hidden;
+
   h1 {
     font-size: 5vh;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
+    font-weight: 800;
   }
 }
 
 .header {
-  // height: 10%;
   padding: 1rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px $border-color solid;
-  border-bottom: none;
+  background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
+
+  color: white;
+  width: 110%;
+  transform: translateX(-5%);
+  border-radius: 10px;
+
 
   h5 {
     margin: 0px;
@@ -57,9 +70,10 @@ body {
 
   button {
     background-color: transparent;
-    color: $text-color;
     border: none;
     padding: 0.25rem 1rem;
+    font-family: Nunito;
+    color: white;
   }
 
   button:hover {
@@ -70,13 +84,15 @@ body {
 
 .body-container {
   padding: 4rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   border: $border-color 1px solid;
   font-size: 1.1rem;
   font-weight: 500;
+  width: 100%;
 
   img {
     max-width: 100%;
@@ -87,6 +103,13 @@ body {
   text-indent: 1rem;
   margin: 0px;
   word-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.submissions {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .submission {
@@ -94,6 +117,7 @@ body {
   flex-direction: column;
   gap: 1rem;
   border-bottom: 1px solid $border-color;
+  width: 100%;
 
   iframe {
     display: flex;
@@ -102,25 +126,24 @@ body {
   }
 }
 
-.submissions {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 4rem;
-}
+
 
 .upload-demo-form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
   input {
     // border: 1px dashed $border-color;
     padding: 0.5rem;
   }
+
   textarea {
     height: 20vh;
     // border: 1px dashed $border-color;
     padding: 0.5rem;
   }
+
   button {
     // width: 15%;
     background: transparent;
@@ -134,4 +157,11 @@ body {
     background-color: rgba(0, 0, 0, 0.185);
     cursor: pointer;
   }
+}
+
+.color-effect {
+  background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

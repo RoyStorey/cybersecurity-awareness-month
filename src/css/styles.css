@@ -1,11 +1,15 @@
 @font-face {
-  font-family: BigShoulders;
-  src: url(../static/BigShouldersText-Regular.ttf);
+  font-family: Nunito;
+  src: url(../static/Nunito-VariableFont_wght.ttf);
 }
 body {
-  background-color: #ffffff;
+  background-color: #fff9f9;
   color: rgba(0, 0, 0, 0.8);
-  font-family: BigShoulders;
+  font-family: Nunito;
+}
+
+span {
+  padding-inline: 0.5rem;
 }
 
 .page-container {
@@ -17,7 +21,7 @@ body {
 }
 
 .content-container {
-  width: 50rem;
+  width: 60vw;
   margin-top: 4vw;
 }
 
@@ -29,29 +33,38 @@ body {
   border: 1px rgba(0, 0, 0, 0.2666666667) solid;
   border-bottom: none;
   gap: 1.2vh;
+  padding: 4rem;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .hero h1 {
   font-size: 5vh;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 0px;
+  font-weight: 800;
 }
 
 .header {
   padding: 1rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px rgba(0, 0, 0, 0.2666666667) solid;
-  border-bottom: none;
+  background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
+  color: white;
+  width: 110%;
+  transform: translateX(-5%);
+  border-radius: 10px;
 }
 .header h5 {
   margin: 0px;
 }
 .header button {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.8);
   border: none;
   padding: 0.25rem 1rem;
+  font-family: Nunito;
+  color: white;
 }
 .header button:hover {
   background-color: rgba(0, 0, 0, 0.185);
@@ -60,13 +73,15 @@ body {
 
 .body-container {
   padding: 4rem;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   align-items: center;
   border: rgba(0, 0, 0, 0.2666666667) 1px solid;
   font-size: 1.1rem;
   font-weight: 500;
+  width: 100%;
 }
 .body-container img {
   max-width: 100%;
@@ -76,6 +91,13 @@ body {
   text-indent: 1rem;
   margin: 0px;
   word-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.submissions {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
 }
 
 .submission {
@@ -83,17 +105,12 @@ body {
   flex-direction: column;
   gap: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2666666667);
+  width: 100%;
 }
 .submission iframe {
   display: flex;
   align-self: center;
   border: none;
-}
-
-.submissions {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: 4rem;
 }
 
 .upload-demo-form {
@@ -117,4 +134,11 @@ body {
 .upload-demo-form button:hover {
   background-color: rgba(0, 0, 0, 0.185);
   cursor: pointer;
+}
+
+.color-effect {
+  background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
 }/*# sourceMappingURL=styles.css.map */

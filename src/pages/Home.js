@@ -11,7 +11,8 @@ function Home() {
       <div class="page-container">
         <div class="content-container">
           <div class="hero">
-            <h1>October is Cybersecurity Awareness Month</h1>
+            <h1>October is <span className="color-effect">Cybersecurity</span>
+              Awareness Month</h1>
           </div>
           <Header />
           <div class="body-container">

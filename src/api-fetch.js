@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const postUrl = `http://192.168.56.1:8420/api/`;
+const postUrl = `http://192.168.0.192:8420/api/`;
 const endpoint = ["get-demos", "post-demo"];
 
 async function getDemos() {
