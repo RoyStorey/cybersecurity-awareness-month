@@ -4,6 +4,7 @@ import Themes from "./pages/Themes";
 import Demos from "./pages/Demos";
 import UploadDemo from "./pages/UploadDemo";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Admin from "./pages/Admin";
 
 const queryclient = new QueryClient();
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="/themes" element={<Themes />} />
           <Route path="/demos" element={<Demos />} />
           <Route path="/upload-demo" element={<UploadDemo />} />
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </QueryClientProvider>
     </Router>

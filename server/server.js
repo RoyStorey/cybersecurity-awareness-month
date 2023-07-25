@@ -39,10 +39,54 @@ app.get("/api/get-demos", (req, res) => {
   });
 });
 
-app.post("/api/post-demo", (req, res) => {
+app.post("/api/approve-demo", (req, res) => {
   const { creator_name, description, url } = req.body;
   const sql =
     "INSERT INTO demos (creator_name, description, url) VALUES (?, ?, ?)";
+  const params = [creator_name, description, url];
+
+  db.run(sql, params, function (err) {
+    if (err) {
+      res.status(400).json({ error: err.message });
+      return;
+    }
+  });
+});
+
+app.post("/api/deny-demo", (req, res) => {
+  const { uid } = req.body;
+  const sql =
+    "DELETE FROM pending WHERE uid= ?";
+  const params = [uid];
+
+  db.run(sql, params, function (err) {
+    if (err) {
+      res.status(400).json({ error: err.message });
+      return;
+    }
+  });
+});
+
+app.get("/api/get-unapproved-demos", (req, res) => {
+  const sql = "SELECT * FROM pending";
+  const params = [];
+  db.all(sql, params, (err, rows) => {
+    if (err) {
+      res.status(400).json({ error: err.message });
+      return;
+    }
+
+    res.json({
+      message: "success",
+      data: rows,
+    });
+  });
+});
+
+app.post("/api/post-demo", (req, res) => {
+  const { creator_name, description, url } = req.body;
+  const sql =
+    "INSERT INTO pending (creator_name, description, url) VALUES (?, ?, ?)";
   const params = [creator_name, description, url];
 
   db.run(sql, params, function (err) {

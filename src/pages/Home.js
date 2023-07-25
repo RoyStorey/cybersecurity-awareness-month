@@ -20,7 +20,7 @@ function Home() {
               <b>October is Cybersecurity Awareness Month.</b>
             </p>
             <p className="description">
-              The 89th Communications Squadron MDT has an annual tradition of
+              There is an annual tradition of
               creating cybersecurity-related demonstration videos for
               cybersecurity awareness month. Starting in 2023, each year will
               have a different theme based in the <b>cybersecurity</b> realm.

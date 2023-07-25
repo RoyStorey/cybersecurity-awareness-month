@@ -3,7 +3,7 @@
   src: url(../static/Nunito-VariableFont_wght.ttf);
 }
 body {
-  background-color: #fff9f9;
+  background-color: #ffffff;
   color: rgba(0, 0, 0, 0.8);
   font-family: Nunito;
 }
@@ -82,6 +82,7 @@ span {
   font-size: 1.1rem;
   font-weight: 500;
   width: 100%;
+  border-top: none;
 }
 .body-container img {
   max-width: 100%;
@@ -98,6 +99,7 @@ span {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 
 .submission {

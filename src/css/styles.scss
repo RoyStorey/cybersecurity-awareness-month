@@ -7,7 +7,7 @@ $border-color: #00000044;
 }
 
 body {
-  background-color: #fff9f9;
+  background-color: #ffffff;
   color: $text-color;
   font-family: Nunito;
 }
@@ -93,6 +93,7 @@ span {
   font-size: 1.1rem;
   font-weight: 500;
   width: 100%;
+  border-top:none;
 
   img {
     max-width: 100%;
@@ -110,6 +111,7 @@ span {
   display: flex;
   gap: 4rem;
   flex-wrap: wrap;
+  flex-direction: column-reverse;
 }
 
 .submission {

@@ -19,7 +19,7 @@ function UploadDemo() {
       getEmbed(document.getElementById("upload_url").value);
     postDemo(creator_name, description, url);
 
-    alert("Demo submitted successfully..");
+    alert("Demo submitted successfully. Awaiting moderator review.");
     window.location.reload();
   };
 
