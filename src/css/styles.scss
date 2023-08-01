@@ -57,7 +57,6 @@ span {
   justify-content: space-between;
   align-items: center;
   background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
-
   color: white;
   width: 110%;
   transform: translateX(-5%);
@@ -166,4 +165,62 @@ span {
 
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+$breakpoint-tablet: 1080px;
+
+@media (max-width: $breakpoint-tablet) {
+  .content-container{
+    width: 90vw;
+  }
+  .body-container{
+    padding:2vh;
+  }
+
+  .description{
+    text-align: center;
+  }
+
+  .hero {
+    height: 60vh;
+  
+    h1 {
+      font-size: 3vh;
+    }
+  }
+
+  .header {
+    align-items: center;
+    // background: linear-gradient(120deg, hsl(0, 70%, 33%), hsl(32, 70%, 33%));
+    border-radius:0px;
+    transform:none;
+    color: white;
+    width: 100%;
+  
+  
+    h5 {
+      margin: 0px;
+    }
+  
+    button {
+      background-color: rgba(255, 255, 255, 0.24);
+      border-radius:10px;
+      border: none;
+      padding: 0.25rem 1rem;
+      font-family: Nunito;
+      color: white;
+      margin-bottom:10px;
+    }
+  
+    button:hover {
+      background-color: rgba(0, 0, 0, 0.185);
+      cursor: pointer;
+    }
+    .button-container{
+      display:flex;
+      width:80%;
+      justify-content: space-between;
+      flex-wrap:wrap
+    }
+  }
 }

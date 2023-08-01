@@ -6,7 +6,7 @@ function Header() {
       <div class="hosted-by">
         <h5>Hosted by 89CS MDT</h5>
       </div>
-      <div>
+      <div className="button-container">
         <Link to="/">
           <button>Home</button>
         </Link>

@@ -143,4 +143,51 @@ span {
   -webkit-background-clip: text;
           background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1080px) {
+  .content-container {
+    width: 90vw;
+  }
+  .body-container {
+    padding: 2vh;
+  }
+  .description {
+    text-align: center;
+  }
+  .hero {
+    height: 60vh;
+  }
+  .hero h1 {
+    font-size: 3vh;
+  }
+  .header {
+    align-items: center;
+    border-radius: 0px;
+    transform: none;
+    color: white;
+    width: 100%;
+  }
+  .header h5 {
+    margin: 0px;
+  }
+  .header button {
+    background-color: rgba(255, 255, 255, 0.24);
+    border-radius: 10px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-family: Nunito;
+    color: white;
+    margin-bottom: 10px;
+  }
+  .header button:hover {
+    background-color: rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+  }
+  .header .button-container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=styles.css.map */
