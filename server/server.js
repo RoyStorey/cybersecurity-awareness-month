@@ -66,6 +66,19 @@ app.post("/api/deny-demo", (req, res) => {
     }
   });
 });
+app.post("/api/delete-demo", (req, res) => {
+  const { uid } = req.body;
+  const sql =
+    "DELETE FROM demos WHERE uid= ?";
+  const params = [uid];
+
+  db.run(sql, params, function (err) {
+    if (err) {
+      res.status(400).json({ error: err.message });
+      return;
+    }
+  });
+});
 
 app.get("/api/get-unapproved-demos", (req, res) => {
   const sql = "SELECT * FROM pending";
