@@ -12,9 +12,7 @@ const client_port = process.env.PORT;
 const server_port = process.env.SERVER_PORT;
 
 app.use(
-  cors({
-    origin: `http://${ip_address}:${client_port}`,
-  })
+  cors()
 );
 
 app.listen(server_port, () => {

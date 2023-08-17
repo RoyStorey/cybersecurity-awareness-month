@@ -5,6 +5,7 @@ import Demos from "./pages/Demos";
 import UploadDemo from "./pages/UploadDemo";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Admin from "./pages/Admin";
+import HomeAdmin from "./pages/HomeAdmin"
 
 const queryclient = new QueryClient();
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/demos" element={<Demos />} />
           <Route path="/upload-demo" element={<UploadDemo />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/home-admin" element={<HomeAdmin />} />
         </Routes>
       </QueryClientProvider>
     </Router>

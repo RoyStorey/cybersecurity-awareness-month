@@ -1,13 +1,13 @@
 import Header from "../components/Header";
 import "../css/styles.css";
 import { useQuery } from "react-query";
-import { getUnapprovedDemos, getDemos } from "../api-fetch";
+import { getDemos } from "../api-fetch";
 import PendingSubmissions from "../components/PendingSubmissions";
 import AdminDemos from "../components/AdminDemos";
 
-function Admin() {
+function HomeAdmin() {
 
-  let { data, error, isError, isLoading } = useQuery("demos", getUnapprovedDemos);
+  let { data, error, isError, isLoading } = useQuery("demos", getDemos);
 
   if (isError) return "Error!";
   if (isLoading) return "Loading...";
@@ -17,12 +17,12 @@ function Admin() {
     <div class="page-container">
       <div class="content-container">
         <div class="hero">
-          <h1>Admin</h1>
+          <h1>Homepage Admin</h1>
         </div>
         <Header />
         <div class="body-container">
           <div className="submissions">
-            <PendingSubmissions data={data} />
+            <AdminDemos data={data} />
           </div>
         </div>
       </div>
@@ -31,4 +31,4 @@ function Admin() {
   );
 }
 
-export default Admin;
+export default HomeAdmin;

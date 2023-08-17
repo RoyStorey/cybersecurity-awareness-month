@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const postUrl = `http://172.16.220.218:8420/api/`;
-const endpoint = ["get-demos","approve-demo", "get-unapproved-demos", "post-demo", "deny-demo"];
+const endpoint = ["get-demos","approve-demo", "get-unapproved-demos", "post-demo", "deny-demo", "delete-demo"];
 
 async function getDemos() {
   try {
@@ -68,5 +68,17 @@ async function denyDemo(uid) {
     throw error;
   }
 }
+async function deleteDemo(uid) {
+  console.log(uid);
+  try {
+    const response = await axios.post(postUrl + endpoint[5], {
+      uid
+    });
+    return response.data.data;
+  } catch (error) {
+    console.error("Error posting demo:", error);
+    throw error;
+  }
+}
 
-export { getDemos, postDemo, getUnapprovedDemos, approveDemo, denyDemo};
+export { getDemos, postDemo, getUnapprovedDemos, approveDemo, denyDemo, deleteDemo};
